@@ -34,13 +34,13 @@ psk="yourpassword"
 
 below commands may be useful
 
-wpa_cli  -i wlan0 reconfigure
-ifconfig wlan0
-iwconfig
-ifconfig  wlan0 up
-service networking restart
-systemctl  restart wpa_supplicant
-wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
+    wpa_cli  -i wlan0 reconfigure
+    ifconfig wlan0
+    iwconfig
+    ifconfig  wlan0 up
+    service networking restart
+    systemctl  restart wpa_supplicant
+    wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
 
 
 
