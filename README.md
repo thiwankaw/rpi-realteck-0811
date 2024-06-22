@@ -6,31 +6,31 @@ goto https://github.com/morrownr/8821au-20210708?tab=readme-ov-file
 
 install below packages
 
-sudo apt install -y raspberrypi-kernel-headers build-essential bc dkms git
+    sudo apt install -y raspberrypi-kernel-headers build-essential bc dkms git
 
 
 clone the repo
 
-git clone https://github.com/morrownr/8821au-20210708.git
+    git clone https://github.com/morrownr/8821au-20210708.git
 
 run install
 
-cd 8821au-20210708
-sudo ./install-driver.sh
+    cd 8821au-20210708
+    sudo ./install-driver.sh
 
 
 edit /etc/wpa_supplicant/wpa_supplicant.conf as below
 
 
-ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-update_config=1
-country=LK
-
-network={
-ssid="SLT-4G_C5C67"
-key_mgmt=WPA-PSK
-psk="yourpassword"
-}
+    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+    update_config=1
+    country=LK
+    
+    network={
+    ssid="SLT-4G_C5C67"
+    key_mgmt=WPA-PSK
+    psk="yourpassword"
+    }
 
 below commands may be useful
 
